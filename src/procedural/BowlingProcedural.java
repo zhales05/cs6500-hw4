@@ -1,3 +1,5 @@
+package procedural;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -15,6 +17,7 @@ public class BowlingProcedural {
         System.out.println("File path: " + filePath);
         String fileContent = readFile(filePath);
         List<String> shots = List.of(fileContent.split("\\s+"));
+
         int shotIndex = 0;
         int finalScore = 0;
         int round = 1;
@@ -45,7 +48,7 @@ public class BowlingProcedural {
             finalScore += roundTotal;
             round++;
         }
-        System.out.println(finalScore);
+        System.out.println("Final Score: " + finalScore);
     }
 
     private static String readFile(String filePath) {
