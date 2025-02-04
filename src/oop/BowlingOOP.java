@@ -7,6 +7,7 @@ import java.util.List;
 
 public class BowlingOOP {
     public static void main(String[] args) {
+        System.out.println("Bowling OOP");
         if (args.length < 1) {
             System.out.println("Please provide the directory path as a command line argument.");
             return;
